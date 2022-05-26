@@ -1,11 +1,8 @@
-
-<!-- saved from url=(0128)https://labs.cognitiveclass.ai/tools/jupyterlite/lab/tree/labs/PY0101EN/PY0101EN-1-1-Write_your_first_python_code.ipynb?lti=true -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="application/javascript" async="" defer="" src="./PY0101EN-1-1-Write_your_first_python_code_files/track.js.download"></script><script type="text/javascript" async="" src="./PY0101EN-1-1-Write_your_first_python_code_files/O5SLs1K1RfWhBYkHvMaXTg.js.download"></script><script async="" src="./PY0101EN-1-1-Write_your_first_python_code_files/l.js.download"></script><script src="./PY0101EN-1-1-Write_your_first_python_code_files/37753.js.download" defer=""></script><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
-</style><style type="text/css" media="print">#uvTab,.uv-tray,.uv-icon,.uv-popover,.uv-bubble{display:none!important}</style></head><body><nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0; font-weight: normal; height: 50px;">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0; font-weight: normal; height: 50px;">
     <div class="container-fluid">
 
         <div class="navbar-left pull-left">
-            <a href="https://labs.cognitiveclass.ai/tools/jupyterlite/lab/tree/labs/PY0101EN/PY0101EN-1-1-Write_your_first_python_code.ipynb?lti=true#menu-toggle" id="menu-toggle" aria-label="Open the Labs menu">
+            <a href="#menu-toggle" id="menu-toggle" aria-label="Open the Labs menu">
                 <span class="fa fa-bars fa-2x" style="padding-top: 12px; color: #ccc; display: inline-block" aria-hidden="true"></span>
             </a>
         </div>
@@ -19,10 +16,10 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
-            <li id="whatsnew" aria-hidden="true" title="What&#39;s New" style="padding-right:5rem; padding-top:1.25rem;"><div id="noticeable-widget" style="position: relative; margin-top: 0px;"><iframe frameborder="1" height="0" scrolling="no" tabindex="-1" title="Noticeable Trigger" width="0" class="noticeable-trigger-view" src="./PY0101EN-1-1-Write_your_first_python_code_files/index.html" style="border: 0px; opacity: 1; overflow: hidden; user-select: none; visibility: visible; height: 24px; margin-top: 0px; width: 51px; z-index: 2147482942;"></iframe></div></li>
+            <li id="whatsnew" aria-hidden="true" title="What's New" style="padding-right:5rem; padding-top:1.25rem;"><div id="noticeable-widget"></div></li>
             <li id="notifications-button" class="dropdown" aria-hidden="true" title="Notifications">
             <span style="display: none;">Notifications</span>
-                <a href="https://labs.cognitiveclass.ai/tools/jupyterlite/lab/tree/labs/PY0101EN/PY0101EN-1-1-Write_your_first_python_code.ipynb?lti=true#notifications" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 15px; display: inline-block">
+                <a href="#notifications" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 15px; display: inline-block">
                     <span id="notifications_count" class="badge" style="font-size:10px;"></span>
                     <span class="fa fa-bell fa-lg"></span>
                 </a>
@@ -31,11 +28,11 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a class="dropdown-toggle" id="dropdown" data-toggle="dropdown" href="https://labs.cognitiveclass.ai/tools/jupyterlite/lab/tree/labs/PY0101EN/PY0101EN-1-1-Write_your_first_python_code.ipynb?lti=true#">Account<span class="caret"></span></a>
+                <a class="dropdown-toggle" id="dropdown" data-toggle="dropdown" href="#">Account<span class="caret"></span></a>
                 <ul class="dropdown-menu" style="background-color: #222222">
-                    <li><a href="https://labs.cognitiveclass.ai/profile">Profile</a></li>
-                    <li><a href="https://labs.cognitiveclass.ai/session_history">Session History</a></li>
-                    <li><a href="https://labs.cognitiveclass.ai/logout" class="hyperlink">Logout</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/session_history">Session History</a></li>
+                    <li><a href="/logout" class="hyperlink">Logout</a></li>
                 </ul>
             </li>
 
@@ -160,9 +157,9 @@ if (branding_logo) {
 
 
 }
-</script>
-
-  
+</script><!doctype html>
+<html lang="en">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Labs environment for data science with Jupyter, R, and Scala.">
     <script>
@@ -177,16 +174,37 @@ if (branding_logo) {
       </script>
 
     
-  <link rel="stylesheet" type="text/css" href="./PY0101EN-1-1-Write_your_first_python_code_files/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./PY0101EN-1-1-Write_your_first_python_code_files/app.min.css">
-  <link rel="icon" type="image/png" href="https://labs.cognitiveclass.ai/static/images/favicon_16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="https://labs.cognitiveclass.ai/static/images/favicon_32x32.png" sizes="32x32">
-  <link rel="shortcut icon" href="https://labs.cognitiveclass.ai/static/images/favicon.ico">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/static/vendor/bootstrap/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/static/css/app.min.css"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/static/images/favicon_16x16.png"
+    sizes="16x16"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/static/images/favicon_32x32.png"
+    sizes="32x32"
+  />
+  <link
+    rel="shortcut icon"
+    href="/static/images/favicon.ico"
+  />
 
 
       
     <!-- start Google Analytics -->
-    <script async="" src="./PY0101EN-1-1-Write_your_first_python_code_files/js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1433936-16"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -200,12 +218,12 @@ if (branding_logo) {
   
 
   
-    <meta name="google-site-verification" content="">
+    <meta name="google-site-verification" content="" />
   
 
   
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/raven.min.js.download" integrity="sha384-rKlahPWcPWms7ChtWI3cD1GNFfV0mrMOXc2ZE9FO52lTge4iQDVvcatyJISSLkkX" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
-    <script defer="">
+    <script src="https://cdn.ravenjs.com/3.6.1/raven.min.js" integrity="sha384-rKlahPWcPWms7ChtWI3cD1GNFfV0mrMOXc2ZE9FO52lTge4iQDVvcatyJISSLkkX" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script defer>
       // Once everything including subframes and stylesheets is loaded
       window.addEventListener('load', function(){
         function configureRaven() {
@@ -223,18 +241,18 @@ if (branding_logo) {
     </script>
   
 
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/es5.min.js.download" integrity="sha384-meiaV8DP8WNz9bvwGCLNXn7cvfBhAbrcy7seP0AxFqFQBqwQsdFhMSnDDw3HnLnl" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/browser-support-check.js.download" defer="">
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.5.2/es5.min.js" integrity="sha384-meiaV8DP8WNz9bvwGCLNXn7cvfBhAbrcy7seP0AxFqFQBqwQsdFhMSnDDw3HnLnl" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="/static/browser-support-check.js" defer>
     </script>
-    <link rel="stylesheet" href="./PY0101EN-1-1-Write_your_first_python_code_files/jquery.fontpicker.min.css">
-    <link rel="stylesheet" href="./PY0101EN-1-1-Write_your_first_python_code_files/spectrum.min.css" integrity="sha384-KmzjXnRfDX1wMiSNIbVqWsTSYme1szY3QnEjIi1NDM+PCnmNhVay1JvmN9GK7XVC" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/jquery.min.js.download"></script>
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/jquery.font-accessibility.min.js.download"></script>
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/spectrum.min.js.download" integrity="sha384-DenIEyBw14FjP2HqW+PRmEXKvqCFkde8Ybexqwl34wLi6YNnpSVe0+nlHYFJQFCb" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/bootstrap.min.js.download" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./PY0101EN-1-1-Write_your_first_python_code_files/jquery.fontpicker.js.download"></script>
-  
-  
+    <link rel="stylesheet" href="/static/vendor/google-system-local-font-picker/dist/jquery.fontpicker.min.css "rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.css" integrity="sha384-KmzjXnRfDX1wMiSNIbVqWsTSYme1szY3QnEjIi1NDM+PCnmNhVay1JvmN9GK7XVC" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="/static/vendor/jquery.min.js"></script>
+    <script src="/static/vendor/Lightweight-jQuery-Font-Accessibility-Plugin-EasyView/jquery.font-accessibility.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2@2.0.0/dist/spectrum.min.js" integrity="sha384-DenIEyBw14FjP2HqW+PRmEXKvqCFkde8Ybexqwl34wLi6YNnpSVe0+nlHYFJQFCb" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/vendor/google-system-local-font-picker/dist/jquery.fontpicker.js"></script>
+  </head>
+  <body>
     
   <div class="main">
     
@@ -330,13 +348,13 @@ if (branding_logo) {
   }
 </style>
 
-<div id="sidebar-wrapper" class="toggled">
+<div id="sidebar-wrapper" class=toggled>
   
   
   <ul class="sidebar-nav">
       <li class="sidebar-label"><a>Manage Data</a></li>
     
-      <li><a href="https://labs.cognitiveclass.ai/tools/datasette/-/sn">Datasette - Practice and Explore SQL (Beta)</a></li>
+      <li><a href="/tools/datasette/-/sn">Datasette - Practice and Explore SQL (Beta)</a></li>
     
 
 
@@ -352,11 +370,11 @@ if (branding_logo) {
 
     <li class="sidebar-label"><a>Build Analytics</a></li>
     
-      <li><a href="https://labs.cognitiveclass.ai/tools/jupyterlab/">JupyterLab</a></li>
+      <li><a href="/tools/jupyterlab/">JupyterLab</a></li>
     
     
     
-      <li><a href="https://labs.cognitiveclass.ai/tools/rstudio-ide/">RStudio IDE</a></li>
+      <li><a href="/tools/rstudio-ide/">RStudio IDE</a></li>
     
     
 
@@ -366,26 +384,26 @@ if (branding_logo) {
     <li class="sidebar-label"><a>Develop Applications</a></li>
       
       
-        <li><a href="https://labs.cognitiveclass.ai/tools/theiadocker/">Cloud IDE (With Docker)</a></li>
+        <li><a href="/tools/theiadocker/">Cloud IDE (With Docker)</a></li>
       
       
-        <li><a href="https://labs.cognitiveclass.ai/tools/theiaopenshift/">Cloud IDE (With OpenShift)</a></li>
+        <li><a href="/tools/theiaopenshift/">Cloud IDE (With OpenShift)</a></li>
       
     
 
     <li class="sidebar-label"><a>Resources</a></li>
     
-      <li><a rel="noopener" href="https://labs.cognitiveclass.ai/tools/jupyterlite/lab/tree/labs/PY0101EN/PY0101EN-1-1-Write_your_first_python_code.ipynb?lti=true#" data-uv-trigger="smartvote" data-uv-scanned="true" id="uv-2">Submit an idea</a></li>
+      <li><a rel="noopener" href="#" data-uv-trigger="smartvote">Submit an idea</a></li>
     
     <li><a rel="noopener" target="_blank" href="https://cognitiveclass.ai/blog/">Blog</a></li>
     
-      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/kb">Knowledge Base</a>
+      <li><a rel="noopener" target="_blank" href="/kb">Knowledge Base</a>
       </li>
-      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/forum">Feedback Forum</a></li>
-      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/support">Support</a></li>
+      <li><a rel="noopener" target="_blank" href="/forum">Feedback Forum</a></li>
+      <li><a rel="noopener" target="_blank" href="/support">Support</a></li>
     
     <li><a rel="noopener" target="_blank" href="https://courses.cognitiveclass.ai/">Online Learning</a></li>
-    <li><a href="https://labs.cognitiveclass.ai/changelog">What's new</a></li>
+    <li><a href="/changelog">What's new</a></li>
 
     <li class="sidebar-label"><a>Terms</a></li>
     <li><a rel="noopener" target="_blank" href="https://cognitiveclass.ai/legal/">Terms of Use</a></li>
@@ -396,7 +414,7 @@ if (branding_logo) {
     
     
       
-        <div class="page toggled page--maximized">
+        <div class="page toggled">
       
     
     
@@ -406,7 +424,7 @@ if (branding_logo) {
     
     
 
-    <iframe id="tool_iframe" name="tool_iframe_name" src="./PY0101EN-1-1-Write_your_first_python_code_files/PY0101EN-1-1-Write_your_first_python_code.ipynb.html" onload="iframeLoaded()" allow="microphone; camera" style="width: 100%; height: calc(100% - 50px);"></iframe>
+    <iframe id="tool_iframe" name="tool_iframe_name" src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0101EN-SkillsNetwork/labs/Module%201/PY0101EN-1-1-Write_your_first_python_code.ipynb.html" onload="iframeLoaded()" allow="microphone; camera" style="width: 100%; height: calc(100% - 50px);"></iframe>
     
 
   
@@ -417,7 +435,7 @@ if (branding_logo) {
     
   </div>
 
-  
+  </script>
 
 
 
@@ -432,7 +450,7 @@ if (branding_logo) {
     </script>
   
 
-  <script src="./PY0101EN-1-1-Write_your_first_python_code_files/bundle.min.js.download"></script><iframe frameborder="1" height="0" scrolling="no" tabindex="-1" title="Noticeable Widget" width="0" class="noticeable-widget-view noticeable-view_hidden" allowfullscreen="" src="./PY0101EN-1-1-Write_your_first_python_code_files/index(1).html" style="border: 0px; opacity: 0; overflow: hidden; user-select: none; visibility: hidden; z-index: -1; box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px; border-radius: 8px; height: 520px; width: 420px; position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate(-199px, 53px);" data-popper-placement="bottom-end"></iframe>
+  <script src="/static/js/bundle.min.js"></script>
 
       <script>
 
@@ -520,7 +538,7 @@ if (branding_logo) {
 
     
 
-      <script defer="">
+      <script defer>
         var appcuesLoader = document.createElement("script");
 
         appcuesLoader.addEventListener("load", function() {
@@ -551,7 +569,7 @@ if (branding_logo) {
     
     
       <!-- start UserVoice -->
-      <script type="text/javascript" defer="">
+      <script type='text/javascript' defer>
         // Once the document is loaded but not stylesheets or subdocuments
         window.addEventListener('DOMContentLoaded', function() {
           var api_key = 'O5SLs1K1RfWhBYkHvMaXTg'; // pragma: whitelist secret
@@ -603,5 +621,5 @@ if (branding_logo) {
     
 
     
-  
-<div id="uvTab" style="background: url(&quot;https://widget.uservoice.com/pkg/clients/widget2/tab-right-dark-no-bullhorn-6c8fc4d589a9d68b16c89b8bd810aee48f11a826d292d22d2b5491cd2a072495.png&quot;) 50% 0px no-repeat rgb(25, 73, 106); border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(255, 255, 255); border-left: 1px solid rgb(255, 255, 255); border-image: initial; border-right: none; border-radius: 4px 0px 0px 4px; box-shadow: rgba(255, 255, 255, 0.25) 1px 1px 1px inset, rgba(0, 0, 0, 0.5) 0px 1px 2px; font: bold 14px / 1em Arial, sans-serif; position: fixed; right: 0px; top: 50%; z-index: 9999; margin-top: -81px;" class="uv-tab uv-slide-right " aria-label="Open Feedback Widget"><a id="uvTabLabel" style="background-color: transparent; display:block;padding:10px 5px 10px 5px;text-decoration:none;" href="javascript:void(0);"><img src="./PY0101EN-1-1-Write_your_first_python_code_files/feedback-tab.png" alt="Support/Feedback" style="border:0; background-color: transparent; padding:0; margin:0;"></a></div></body></html>
+  </body>
+</html>
